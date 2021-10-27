@@ -8,15 +8,8 @@ This is my solution to the [Single price grid component challenge on Frontend Me
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
   - [Links](#links)
-- [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -34,8 +27,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://koreyandrus.github.io/frontend_mentor_challenges/single-price-grid-component-master/index.html]
 
 ### Built with
 
@@ -46,5 +38,5 @@ Users should be able to:
 
 ## Author
 
-- Website - [Korey Amdris](https://www.KoreyAndrus.com)
+- Website - [Korey Andrus](https://www.KoreyAndrus.com)
 - Twitter - [@koreyandrus](https://www.twitter.com/koreyandrus)
