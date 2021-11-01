@@ -1,0 +1,162 @@
+@import url(./sanitize.css);
+
+:root {
+  --pale_blue: hsl(225, 100%, 94%);
+  --bright_blue: hsl(245, 75%, 52%);
+
+  --very_pale_blue: hsl(225, 100%, 98%);
+  --desaturated_blue: hsl(224, 23%, 55%);
+  --dark_blue: hsl(263, 26%, 57%);
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 16px;
+}
+
+.flex-container {
+  background-color: var(--pale_blue);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (min-width: 900px) {
+  .flex-container {
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 325px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.container img {
+  border-radius: 10px 10px 0 0;
+  width: 100%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: 100%;
+  align-items: center;
+  text-align: center;
+}
+
+.order__title {
+  font-size: 1.5rem;
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+
+.description {
+  font-size: .9rem;
+  color: var(--desaturated_blue);
+  margin-bottom: 0;
+}
+
+.plan_details {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  font-size: .8rem;
+  font-weight: 700;
+  justify-content: space-between;
+  white-space: nowrap;
+  padding: 15px;
+  margin: 30px 0;
+  background-color: var(--very_pale_blue);
+  border-radius: 8px;
+}
+
+.plan-price {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.plan-price p {
+  margin: 0;
+  margin-right: 30px;
+}
+
+.price {
+  color: var(--desaturated_blue);
+  font-weight: 500;
+}
+
+
+#music-logo {
+    width: 40px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 7.5px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: .8rem;
+}
+
+.button--proceed:active {
+  background-color: var(--dark_blue);
+}
+
+.button--proceed {
+  background-color: var(--bright_blue);
+  color: rgb(228, 228, 228);
+}
+
+.button--cancel {
+  background-color: #fff;
+  margin-bottom: 20px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Pale blue: hsl(225, 100%, 94%)
+- Bright blue: hsl(245, 75%, 52%)
+
+### Neutral
+
+- Very pale blue: hsl(225, 100%, 98%)
+- Desaturated blue: hsl(224, 23%, 55%)
+- Dark blue: hsl(223, 47%, 23%)
+
+
