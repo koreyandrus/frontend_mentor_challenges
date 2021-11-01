@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+
+:root {
+  --very-dark-blue-main-bg: hsl(233, 47%, 7%);
+  --dark-desaturated-blue-card-bg: hsl(244, 38%, 16%);
+  --soft-violet-accent: hsl(277, 64%, 61%);
+  --soft-violet-accent-cover: hsla(277, 64%, 61%, 0.7);
+
+  --main-heading: hsl(0, 0%, 100%);
+  --main-paragraph: hsla(0, 0%, 100%, 0.75);
+  --stat-headings: hsla(0, 0%, 100%, 0.6);
+}
+
+/*
+font-family: 'Inter', sans-serif;
+font-family: 'Lexend Deca', sans-serif;
+*/
+
+body {
+  background-color: var(--very-dark-blue-main-bg);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+}
+
+.container {
+  background-color: var(--dark-desaturated-blue-card-bg);
+  border-radius: 10px;
+  width: 270px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.img_box {
+  height: 25vh;
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+  box-shadow: inset 0 0 0 1000px var(--soft-violet-accent-cover);
+  background-image: url(./images/image-header-mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.info {
+  width: 80%;
+  padding-top: 10px;
+}
+
+.info-paragraph {
+  color: var(--main-paragraph);
+  font-size: 0.75rem;
+  padding-bottom: 10px;
+}
+
+.main-title {
+  color: var(--main-heading);
+  font-size: 1.3rem;
+  line-height: 1.5rem;
+}
+
+.text-accent {
+  color: var(--soft-violet-accent);
+}
+
+.stats {
+  color: var(--stat-headings);
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 0.6rem;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 10px;
+}
+
+.accent-num {
+  color: var(--main-heading);
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.attribution {
+  font-size: 11px;
+  color: var(--main-paragraph);
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 800px) {
+  .container {
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    width: 800px;
+    text-align: left;
+  }
+
+  .img_box {
+    width: 50%;
+    height: 100%;
+    border-radius: 0 10px 10px 0;
+    box-shadow: inset 0 0 0 1000px var(--soft-violet-accent-cover);
+    background-image: url(./images/image-header-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .info {
+    width: 50%;
+    padding: 35px;
+  }
+
+  .stats {
+    display: flex;
+    justify-content: start;
+  }
+
+  .stat-item {
+    margin-left: 25px;
+  }
+}
