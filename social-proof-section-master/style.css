@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap");
+
+:root {
+  --very-dark-magenta: hsl(300, 43%, 22%);
+  --soft-pink: hsl(333, 80%, 67%);
+
+  --dark-grayish-magenta: hsl(303, 10%, 53%);
+  --light-grayish-magenta: hsl(300, 24%, 96%);
+  --white: hsl(0, 0%, 100%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Spartan", sans-serif;
+  font-size: 15px;
+  background-image: url(./images/bg-pattern-top-mobile.svg);
+  background-repeat: no-repeat;
+}
+
+.container {
+  padding: 3.5rem 1.5rem;
+  text-align: center;
+}
+
+.container h1 {
+  padding: 1.5rem;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--very-dark-magenta);
+}
+
+.description {
+  padding-bottom: 1.5rem;
+  line-height: 1.5;
+  text-align: center;
+  font-weight: 500;
+  color: var(--dark-grayish-magenta);
+}
+
+.star-rating {
+  background-color: var(--light-grayish-magenta);
+  border-radius: 10px;
+  width: 100%;
+  padding: 0.8rem 0;
+  margin: 1rem 0;
+}
+
+.star-rating p {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--very-dark-magenta);
+  padding-top: 0.2rem;
+}
+
+.stars {
+  padding: 0.2rem;
+}
+
+.star {
+  padding: 0.1rem;
+}
+
+.reviews {
+  margin-top: 3rem;
+}
+
+.review {
+  background-color: var(--very-dark-magenta);
+  border-radius: 10px;
+  margin: 1rem;
+}
+
+.avatar {
+  display: inline-block;
+  width: 3.5rem;
+  border-radius: 50%;
+}
+
+.name {
+  display: inline-block;
+  font-weight: 700;
+  color: var(--white);
+}
+
+.verified {
+  color: var(--soft-pink);
+}
+
+.quote {
+  color: var(--white);
+  padding: 2rem;
+  text-align: left;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
