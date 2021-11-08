@@ -33,6 +33,9 @@ body {
   padding: 1.5rem;
   font-size: 2.2rem;
   font-weight: 700;
+  max-width: 25rem;
+  margin-left: auto;
+  margin-right: auto;
   color: var(--very-dark-magenta);
 }
 
@@ -117,4 +120,37 @@ body {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .top {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .title-section {
+    max-width: 40%;
+  }
+
+  .ratings {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .reviews {
+    display: flex;
+    justify-content: center;
+  }
+
+  .review {
+    max-width: 20rem;
+    margin: 0 0.8rem;
+    font-size: 0.8rem;
+  }
 }
